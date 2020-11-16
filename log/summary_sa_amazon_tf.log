@@ -1,0 +1,27 @@
+[11-16 17:19:58] p13656 {app.py:26} INFO - Logging is set up.
+[11-16 17:20:15] p13656 {C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py:1892} ERROR - Exception on /seclassifier [POST]
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 79, in predict_sentiment
+    app.logger.info("prediction:" + str(predicted_value[0]+ "  sentiment: "+ sentiment))
+TypeError: can only concatenate list (not "str") to list
+[11-16 17:21:40] p14844 {app.py:26} INFO - Logging is set up.
+[11-16 17:21:50] p14844 {app.py:79} INFO - prediction:[-0.25703179836273193]  sentiment: negative
+[11-16 17:28:30] p14844 {app.py:79} INFO - prediction:[5.271825313568115]  sentiment: positive
+[11-16 17:36:34] p1416 {amazon_sentiment_app.py:26} INFO - Logging is set up.
+[11-16 17:37:53] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[-2.437800168991089]  sentiment: negative
+[11-16 17:46:47] p19792 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:26} INFO - Logging is set up.
+[11-16 17:47:29] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[-2.437800168991089]  sentiment: negative
+[11-16 17:49:20] p19052 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:26} INFO - Logging is set up.
+[11-16 17:54:43] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[4.840583324432373]  sentiment: positive

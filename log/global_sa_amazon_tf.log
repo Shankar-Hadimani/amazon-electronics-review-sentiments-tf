@@ -1,0 +1,81 @@
+[2020-11-16 17:19:58,476] p13656 {app.py:26} INFO - Logging is set up.
+[2020-11-16 17:19:58,477] p13656 {app.py:29} INFO - ...sentiment anlaytics tensor flow Model and Vocabulary tokens have been loaded successfully.....
+[2020-11-16 17:20:03,021] p13656 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2020-11-16 17:20:15,723] p13656 {C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py:1892} ERROR - Exception on /seclassifier [POST]
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\_compat.py", line 39, in reraise
+    raise value
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\flask\app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 79, in predict_sentiment
+    app.logger.info("prediction:" + str(predicted_value[0]+ "  sentiment: "+ sentiment))
+TypeError: can only concatenate list (not "str") to list
+[2020-11-16 17:20:15,790] p13656 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:20:15] "[35m[1mPOST /seclassifier HTTP/1.1[0m" 500 -
+[2020-11-16 17:21:40,052] p14844 {app.py:26} INFO - Logging is set up.
+[2020-11-16 17:21:40,053] p14844 {app.py:29} INFO - ...sentiment anlaytics tensor flow Model and Vocabulary tokens have been loaded successfully.....
+[2020-11-16 17:21:44,591] p14844 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2020-11-16 17:21:50,612] p14844 {app.py:79} INFO - prediction:[-0.25703179836273193]  sentiment: negative
+[2020-11-16 17:21:50,615] p14844 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:21:50] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
+[2020-11-16 17:25:07,695] p14844 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:25:07] "[31m[1mPOST /seclassifier HTTP/1.1[0m" 400 -
+[2020-11-16 17:28:30,360] p14844 {app.py:79} INFO - prediction:[5.271825313568115]  sentiment: positive
+[2020-11-16 17:28:30,361] p14844 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:28:30] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
+[2020-11-16 17:30:01,821] p14844 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:30:01] "[37mGET /healthcheck HTTP/1.1[0m" 200 -
+[2020-11-16 17:36:34,595] p1416 {amazon_sentiment_app.py:26} INFO - Logging is set up.
+[2020-11-16 17:36:34,596] p1416 {amazon_sentiment_app.py:29} INFO - ...sentiment anlaytics tensor flow Model and Vocabulary tokens have been loaded successfully.....
+[2020-11-16 17:36:39,131] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO -  * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2020-11-16 17:37:53,540] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[-2.437800168991089]  sentiment: negative
+[2020-11-16 17:37:53,543] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:37:53] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
+[2020-11-16 17:46:47,488] p19792 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:26} INFO - Logging is set up.
+[2020-11-16 17:46:47,489] p19792 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:29} INFO - ...sentiment anlaytics tensor flow Model and Vocabulary tokens have been loaded successfully.....
+[2020-11-16 17:47:23,169] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:47:23] "[37mGET /healthcheck HTTP/1.1[0m" 200 -
+[2020-11-16 17:47:29,672] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[-2.437800168991089]  sentiment: negative
+[2020-11-16 17:47:29,674] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:47:29] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
+[2020-11-16 17:47:38,200] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:47:38] "[31m[1mPOST /seclassifier HTTP/1.1[0m" 400 -
+[2020-11-16 17:49:20,704] p19052 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:26} INFO - Logging is set up.
+[2020-11-16 17:49:20,705] p19052 {C:\Users\sd991188\workspace\ai-and-ml\amazon-electronics-review-sentiments-tf\amazon_sentiment_app.py:29} INFO - ...sentiment anlaytics tensor flow Model and Vocabulary tokens have been loaded successfully.....
+[2020-11-16 17:50:21,457] p19052 {C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py:358} ERROR - Exception while serving /seclassifier
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py", line 350, in service
+    task.service()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 171, in service
+    self.execute()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 441, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+TypeError: 'module' object is not callable
+[2020-11-16 17:52:49,543] p19052 {C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py:358} ERROR - Exception while serving /seclassifier
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py", line 350, in service
+    task.service()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 171, in service
+    self.execute()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 441, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+TypeError: 'module' object is not callable
+[2020-11-16 17:53:12,386] p19052 {C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py:358} ERROR - Exception while serving /seclassifier
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py", line 350, in service
+    task.service()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 171, in service
+    self.execute()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 441, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+TypeError: 'module' object is not callable
+[2020-11-16 17:54:00,139] p19052 {C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py:358} ERROR - Exception while serving /seclassifier
+Traceback (most recent call last):
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\channel.py", line 350, in service
+    task.service()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 171, in service
+    self.execute()
+  File "C:\Anaconda3\envs\ads08\lib\site-packages\waitress\task.py", line 441, in execute
+    app_iter = self.channel.server.application(environ, start_response)
+TypeError: 'module' object is not callable
+[2020-11-16 17:54:43,708] p1416 {amazon_sentiment_app.py:79} INFO - prediction:[4.840583324432373]  sentiment: positive
+[2020-11-16 17:54:43,710] p1416 {C:\Anaconda3\envs\ads08\lib\site-packages\werkzeug\_internal.py:113} INFO - 127.0.0.1 - - [16/Nov/2020 17:54:43] "[37mPOST /seclassifier HTTP/1.1[0m" 200 -
